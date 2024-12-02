@@ -1,0 +1,47 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SmartstoreUI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/port_blue</item>
+        <item name="colorPrimaryVariant">@color/port_yellow</item>
+
+        <!--ratingBar-->
+        <item name="colorControlNormal">@color/port_blue</item>
+        <item name="colorControlActivated">@color/port_yellow</item>
+
+        <item name="android:windowBackground">@color/batang</item>
+
+    </style>
+
+
+    <style name="AppTheme" parent="android:Theme.Material">
+        <item name="android:colorPrimaryDark">@color/port_blue</item>
+    </style>
+
+    <style name="Text.Regular" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:fontFamily">@font/eland_choice_m</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Text.Title" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:fontFamily">@font/eland_choice_b</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Text.light" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:fontFamily">@font/eland_choice_l</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/coffee_light_white</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+        <item name="itemTextColor">@color/bottom_nav_icon_color</item>
+    </style>
+
+
+</resources>

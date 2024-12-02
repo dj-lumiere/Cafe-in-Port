@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedAttribute,ResourceCycle">
+
+    <font
+        android:font="@font/cafe24_ssurround_air"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/cafe24_ssurround_air"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/cafe24_ssurround"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/cafe24_ssurround"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/eland_nice_m"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/eland_nice_m"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/eland_choice_b"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/eland_choice_b"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/eland_choice_l"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/eland_choice_l"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/eland_choice_m"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/eland_choice_m"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/pretendard_thin"
+        android:fontStyle="normal"
+        android:fontWeight="100"
+        app:font="@font/pretendard_thin"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+    <font
+        android:font="@font/pretendard_thin"
+        android:fontStyle="normal"
+        android:fontWeight="100"
+        app:font="@font/pretendard_thin"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+    <font
+        android:font="@font/pretendard_extralight"
+        android:fontStyle="normal"
+        android:fontWeight="200"
+        app:font="@font/pretendard_extralight"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+    <font
+        android:font="@font/pretendard_light"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        app:font="@font/pretendard_light"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+    <font
+        android:font="@font/pretendard_regular"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/pretendard_regular"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+    <font
+        android:font="@font/pretendard_medium"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        app:font="@font/pretendard_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+    <font
+        android:font="@font/pretendard_semibold"
+        android:fontStyle="normal"
+        android:fontWeight="600"
+        app:font="@font/pretendard_semibold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+    <font
+        android:font="@font/pretendard_bold"
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        app:font="@font/pretendard_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+    <font
+        android:font="@font/pretendard_extrabold"
+        android:fontStyle="normal"
+        android:fontWeight="800"
+        app:font="@font/pretendard_extrabold"
+        app:fontStyle="normal"
+        app:fontWeight="800" />
+    <font
+        android:font="@font/pretendard_black"
+        android:fontStyle="normal"
+        android:fontWeight="900"
+        app:font="@font/pretendard_black"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+
+
+</font-family>

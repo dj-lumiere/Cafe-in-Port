@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등급설명"
+        android:textSize="20sp"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tier_traveler_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/tier_traveler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tier_traveler_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/traveler_tier"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toEndOf="@id/tier_traveler_icon"
+        app:layout_constraintTop_toTopOf="@id/tier_traveler_icon" />
+
+    <TextView
+        android:id="@+id/tier_traveler_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/traveler_explain"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_traveler_name"
+        app:layout_constraintTop_toBottomOf="@id/tier_traveler_name" />
+
+    <TextView
+        android:id="@+id/tier_traveler_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/traveler_perks"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_traveler_description"
+        app:layout_constraintTop_toBottomOf="@id/tier_traveler_description" />
+
+
+    <ImageView
+        android:id="@+id/tier_navigator_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/tier_navigator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tier_traveler_description" />
+
+    <TextView
+        android:id="@+id/tier_navigator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/navigator_tier"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toEndOf="@id/tier_navigator_icon"
+        app:layout_constraintTop_toTopOf="@id/tier_navigator_icon" />
+
+    <TextView
+        android:id="@+id/tier_navigator_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/navigator_explain"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_navigator_name"
+        app:layout_constraintTop_toBottomOf="@id/tier_navigator_name" />
+
+    <TextView
+        android:id="@+id/tier_navigator_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navigator_perks"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_navigator_description"
+        app:layout_constraintTop_toBottomOf="@id/tier_navigator_description" />
+
+
+    <ImageView
+        android:id="@+id/tier_lighthouse_keeper_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/tier_lighthouse_keeper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tier_navigator_description" />
+
+    <TextView
+        android:id="@+id/tier_lighthouse_keeper_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/lighthouse_keeper_tier"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toEndOf="@id/tier_lighthouse_keeper_icon"
+        app:layout_constraintTop_toTopOf="@id/tier_lighthouse_keeper_icon" />
+
+    <TextView
+        android:id="@+id/tier_lighthouse_keeper_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/lighthouse_keeper_explain"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_lighthouse_keeper_name"
+        app:layout_constraintTop_toBottomOf="@id/tier_lighthouse_keeper_name" />
+
+    <TextView
+        android:id="@+id/tier_lighthouse_keeper_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lighthouse_keeper_perks"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_lighthouse_keeper_description"
+        app:layout_constraintTop_toBottomOf="@id/tier_lighthouse_keeper_description" />
+
+    <ImageView
+        android:id="@+id/tier_captain_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/tier_captain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tier_lighthouse_keeper_description" />
+
+    <TextView
+        android:id="@+id/tier_captain_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/captain_tier"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toEndOf="@id/tier_captain_icon"
+        app:layout_constraintTop_toTopOf="@id/tier_captain_icon" />
+
+    <TextView
+        android:id="@+id/tier_captain_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/captain_explain"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_captain_name"
+        app:layout_constraintTop_toBottomOf="@id/tier_captain_name" />
+
+    <TextView
+        android:id="@+id/tier_captain_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/captain_perks"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_captain_description"
+        app:layout_constraintTop_toBottomOf="@id/tier_captain_description" />
+
+    <ImageView
+        android:id="@+id/tier_port_master_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/port_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tier_captain_description" />
+
+    <TextView
+        android:id="@+id/tier_port_master_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/port_master_tier"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_bold"
+        app:layout_constraintStart_toEndOf="@id/tier_port_master_icon"
+        app:layout_constraintTop_toTopOf="@id/tier_port_master_icon" />
+
+    <TextView
+        android:id="@+id/tier_port_master_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/port_master_explain"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_port_master_name"
+        app:layout_constraintTop_toBottomOf="@id/tier_port_master_name" />
+
+    <TextView
+        android:id="@+id/tier_port_master_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/port_master_perks"
+        android:textSize="12sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toStartOf="@id/tier_port_master_description"
+        app:layout_constraintTop_toBottomOf="@id/tier_port_master_description" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/nemo_btn"
+        android:text="닫기"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tier_port_master_description2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Cafe in Port</string>
+
+    <string name="google_register_complete">환영합니다 %1$s님</string>
+    <string name="google_login_complete">어서 오세요 %1$s님.</string>
+    <string name="google_login_failed">구글 로그인에 실패하였습니다.</string>
+    <string name="name">%1$s님</string>
+    <string name="name2">%1$s님,</string>
+    <string name="welcome_message">오늘 당신의 바다는 평안한가요?</string>
+    <string name="menu_recommend_message">이런 메뉴는 어떠세요?</string>
+    <string name="tier_text">%1$s %2$s</string>
+    <string name="leftover">다음 레벨까지 %1$d개의 파도가 남았습니다.</string>
+    <string name="max_level">최고 등급을 달성하셨습니다.</string>
+    <string name="next_level">%1$d/%2$d</string>
+    <string name="menu_name_multiple">%1$s 외 %2$d건</string>
+    <string name="menu_name_single">%1$s</string>
+    <string name="menu_price">%1$s 원</string>
+    <string name="shopping_count">총 %1$d개</string>
+    <string name="shopping_money">%1$s</string>
+    <string name="nearby_store_distance">%1$dm, %2$d분</string>
+    <string name="nearby_store_distance_long">%1$.2fkm, %2$d시간 %3$d분</string>
+    <string name="calculating_nearby_store_distance">매장과의 거리를 계산중이에요.</string>
+    <string name="nearby_store_distance_small">%1$dkm, %2$d분</string>
+    <string name="reorder">재주문</string>
+    <string name="order_prep">%1$d번 주문을 지금 만들고 있어요.</string>
+    <string name="order_complete">%1$d번 주문이 준비되었어요.</string>
+    <string name="join_date">가입일자 : %1$s </string>
+    <string name="tier_perks">현재 등급 혜택: %1$s</string>
+    <string name="book_title">『%1$s』중에서</string>
+
+    <string name="self">Cafe in Port</string>
+
+    <string name="menu_number_format">%1$s x %2$d</string>
+
+    <string name="traveler_tier">여행자</string>
+    <string name="traveler_explain">평안한 일상을 위한 여정을 시작한 첫 단계</string>
+    <string name="traveler_perks">무료 사이즈 변경</string>
+
+    <string name="navigator_tier">항해사</string>
+    <string name="navigator_explain">더 많은 메뉴를 탐험하고 여정을 즐기는 단계</string>
+    <string name="navigator_perks">하위 례벨 혜택, 연 1회 음료 무료</string>
+
+    <string name="lighthouse_keeper_tier">등대지기</string>
+    <string name="lighthouse_keeper_explain">평안한 일상을 위한 여정을 시작한 첫 단계</string>
+    <string name="lighthouse_keeper_perks">하위 레벨 혜택, 매월 1회 디저트 무료 제공</string>
+
+    <string name="captain_tier">함장</string>
+    <string name="captain_explain">평안한 일상을 위한 여정을 시작한 첫 단계</string>
+    <string name="captain_perks">하위 레벨 혜택, 한정판 굿즈 연 1회  제공</string>
+
+    <string name="port_master_tier">포트마스터</string>
+    <string name="port_master_explain">평안한 일상을 위한 여정을 시작한 첫 단계</string>
+    <string name="port_master_perks">하위 레벨 혜택, 신메뉴 테이스팅</string>
+
+    <string name="clear_all">전체 삭제</string>
+
+</resources>

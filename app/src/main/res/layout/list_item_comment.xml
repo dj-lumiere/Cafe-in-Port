@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:paddingTop="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_profile"
+        android:contentDescription="User profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/textNoticeContent" />
+
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintStart_toEndOf="@id/user_image"
+        app:layout_constraintTop_toTopOf="@id/user_image"
+        app:layout_constraintEnd_toStartOf="@id/ratingBar"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        app:layout_constraintStart_toStartOf="@id/user_nickname"
+        app:layout_constraintTop_toTopOf="@id/user_nickname"
+        app:layout_constraintBottom_toBottomOf="@id/user_nickname" />
+
+    <TextView
+        android:id="@+id/textNoticeContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="신 맛 나는 커피 좋아하는데 맛있어요"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:paddingTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/user_nickname"
+        app:layout_constraintTop_toBottomOf="@id/user_nickname" />
+
+    <EditText
+        android:id="@+id/etCommentContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="8dp"
+        android:hint="댓글을 입력하세요"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="start|center_vertical"
+        android:inputType="textMultiLine|text"
+        app:layout_constraintEnd_toStartOf="@id/ivModifyAcceptComment"
+        app:layout_constraintStart_toStartOf="@id/user_nickname"
+        app:layout_constraintTop_toBottomOf="@id/user_nickname" />
+
+    <ImageButton
+        android:id="@+id/ivModifyComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_24"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/ivDeleteComment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ivDeleteComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_24"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ivModifyAcceptComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_checked_24"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/ivModifyCancelComment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ivModifyCancelComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_24"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

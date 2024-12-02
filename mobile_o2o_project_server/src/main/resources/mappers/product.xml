@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- name space는 BookRepo의 fully qualified name으로 설정한다. -->
+<mapper namespace="com.ssafy.cafe.model.dao.ProductDao">
+
+    <select id="selectAll" resultType="Product">
+        SELECT *
+        FROM t_product
+        order by id asc
+    </select>
+
+    <select id="selectProductById" parameterType="int" resultType="Product">
+        SELECT *
+        FROM t_product
+        where id = #{id}
+    </select>
+
+    <select id="getProductDetailId" parameterType="ProductWithDetail" resultType="int">
+        SELECT id
+        FROM t_product_detail
+        where p_id = #{id}
+          and size = #{size}
+          and temperature = #{temperature}
+    </select>
+
+
+    <select id="selectInfo" parameterType="int" resultType="ProductWithComment">
+        SELECT p.id,
+               p.name,
+               p.img,
+               p.type,
+               (select count(rating) from t_comment where product_id = p.id)             as comment_count,
+               (select round(avg(rating), 2) from t_comment where product_id = p.id)     as average_stars,
+               (select sum(quantity) from t_order_detail where product_detail_id = p.id) as total_sells
+        FROM t_product p
+        WHERE p.id = #{productId}
+    </select>
+
+    <select id="getProductWithDetail" parameterType="int" resultType="ProductWithDetail">
+        select tp.id,
+               tp.name,
+               tp.type,
+               tp.img,
+               tpd.id as detailId,
+               tpd.size,
+               tpd.temperature,
+               tpd.price
+        from t_product as tp
+                 join ssafy_mobile_cafe.t_product_detail tpd on tp.id = tpd.p_id
+        where tp.id = #{productId};
+    </select>
+</mapper>

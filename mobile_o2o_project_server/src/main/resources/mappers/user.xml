@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- name space는 BookRepo의 fully qualified name으로 설정한다. -->
+<mapper namespace="com.ssafy.cafe.model.dao.UserDao">
+    <insert id="insert" parameterType="User">
+        INSERT INTO t_user
+        (id,
+         username,
+         pass, email)
+        VALUES (#{id},
+                #{username},
+                #{pass}, #{email})
+    </insert>
+
+    <update id="updateStamp" parameterType="User">
+        UPDATE t_user
+        SET stamps = stamps + #{stamps}
+        WHERE id = #{id}
+    </update>
+
+    <select id="selectById" parameterType="String" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectByUser" parameterType="User" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE id = #{id}
+          and pass = #{pass}
+    </select>
+    <select id="selectByUserNo" parameterType="Integer" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE user_no = #{userNo}
+    </select>
+
+    <select id="checkValidUser" parameterType="User" resultType="Integer">
+        SELECT user_no
+        FROM t_user
+        where id = #{id}
+          and email = #{email}
+    </select>
+
+    <update id="changePassword" parameterType="User">
+        UPDATE t_user
+        SET pass = #{pass}
+        WHERE user_no = #{userNo}
+    </update>
+
+    <select id="isEmailDuplicate" parameterType="String" resultType="Integer">
+        SELECT count(id)
+        FROM t_user
+        WHERE email = #{email}
+    </select>
+
+    <select id="findIdFromEmail" parameterType="String" resultType="String">
+        SELECT id
+        FROM t_user
+        WHERE email = #{email}
+    </select>
+
+    <update id="updateFcmToken" parameterType="User">
+        UPDATE t_user
+        SET fcm_token = #{fcmToken}
+        WHERE user_no = #{userNo}
+    </update>
+
+</mapper>

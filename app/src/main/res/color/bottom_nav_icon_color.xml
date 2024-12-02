@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 선택된 상태 (Focused/Selected) -->
+    <item android:color="@color/port_blue" android:state_checked="true" />
+
+    <!-- 기본 상태 (Dim/Not Selected) -->
+    <item android:color="@color/gray" android:state_checked="false" />
+</selector>

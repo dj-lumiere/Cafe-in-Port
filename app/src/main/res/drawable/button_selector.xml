@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Disabled state -->
+    <item android:drawable="@drawable/nemo_btn_deactivate" android:state_enabled="false" />
+
+    <!-- Selected state -->
+    <item android:drawable="@drawable/nemo_btn_deactivate" android:state_selected="false" />
+
+    <!-- Default (enabled and not pressed) -->
+    <item android:drawable="@drawable/nemo_btn" />
+</selector>

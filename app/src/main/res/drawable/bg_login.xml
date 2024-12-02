@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/bg_i_login"
+            android:alpha="0.8"/>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#35000000" />
+        </shape>
+    </item>
+</layer-list>

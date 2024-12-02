@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the button is disabled -->
+    <item android:drawable="@drawable/glass_cup_24dp_dim" android:state_selected="false" />
+
+    <!-- Default state (enabled but not pressed) -->
+    <item android:drawable="@drawable/ic_glass_cup_24dp_focus" />
+</selector>

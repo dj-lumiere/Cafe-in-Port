@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_page_1"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/ic_home_dim_24"/>
+    <item
+        android:id="@+id/navigation_page_2"
+        android:enabled="true"
+        android:title="Order"
+        android:icon="@drawable/ic_order_dim_24"/>
+    <item
+        android:id="@+id/navigation_page_3"
+        android:enabled="true"
+        android:title="event"
+        android:icon="@drawable/ic_calendar_dim_24"/>
+    <item
+        android:id="@+id/navigation_page_4"
+        android:enabled="true"
+        android:title="Mypage"
+        android:icon="@drawable/ic_person_dim_24"/>
+</menu>
